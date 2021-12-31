@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - published: 8080
+        target: 8080
+    environment:
+      PORT: 8080
